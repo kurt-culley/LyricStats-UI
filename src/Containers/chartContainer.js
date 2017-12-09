@@ -33,8 +33,7 @@ class ChartContainer extends Component {
                 <div></div>
             );
         }
-        //console.log('chartdata')
-        //console.log(this.props.chartData)
+
         return (
             <div className="chart-container">
                 <div className="justify-content-center">
