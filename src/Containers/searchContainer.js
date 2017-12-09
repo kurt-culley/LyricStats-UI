@@ -47,6 +47,7 @@ class SearchContainer extends Component {
                             <option value="track">Track</option>
                             <option value="track_adlibs">Track Adlibs</option>
                             <option value="artist">Artist</option>
+                            <option value="artist_adlibs">Artist Adlibs</option>
                         </select>
                     </div>
                 </div>
@@ -60,8 +61,8 @@ class SearchContainer extends Component {
                         onChange={this.handleInputChange}
                     />
                     <span className="input-group-btn">
-                    <input className="btn btn-secondary" type="submit" value="Submit"/>
-                </span>
+                        <input className="btn btn-secondary" type="submit" value="Submit"/>
+                    </span>
                 </div>
             </form>
         );

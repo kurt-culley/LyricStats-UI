@@ -9,7 +9,7 @@ input.form-control {
 }
 
 form {
-  padding-top: 25px;
+  margin-top: 25px;
 }
 
 div #BarChart {
@@ -18,10 +18,26 @@ div #BarChart {
 }
 
 .chart-container {
-  padding-top: 50px;
+  margin-top: 10px;
 }
 
 .select-width {
   width: auto;
   margin:10px;
+}
+
+.result-container {
+  margin-top: 25px;
+}
+
+.filter-container {
+  margin-top: 25px;
+}
+
+.filter-tag-container {
+  margin-top: 10px;
+}
+
+.badge {
+  margin: 0 5px 0 5px;
 }

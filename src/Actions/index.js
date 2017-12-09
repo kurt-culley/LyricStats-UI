@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const ROOT_URL = `http://127.0.0.1:3000`;
+const ROOT_URL = `http://127.0.0.1:3005`;
 
 export const FETCH_CHART_DATA = 'FETCH_CHART_DATA';
 

@@ -28,20 +28,19 @@ class ChartContainer extends Component {
     }
 
     render() {
-        if (!this.props.chart.data) {
+        if (!this.props.chartData) {
             return (
                 <div></div>
             );
         }
-
+        //console.log('chartdata')
+        //console.log(this.props.chartData)
         return (
             <div className="chart-container">
                 <div className="justify-content-center">
-                    <h1>{this.props.chart.artist}</h1>
-                    <h2>{this.props.chart.title}</h2>
                     <Chart
                         chartType="BarChart"
-                        data={this.props.chart.data}
+                        data={this.props.chartData}
                         options={this.state.options}
                         graph_id="BarChart"
                         width="800px"
@@ -53,10 +52,4 @@ class ChartContainer extends Component {
     }
 }
 
-function mapStateToProps({chart}) {
-    return {chart};
-}
-
-export default connect(mapStateToProps)(ChartContainer);
-
-
+export default ChartContainer;

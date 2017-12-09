@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import ChartContainer from './chartContainer';
+import ResultContainer from './resultContainer';
 import SearchContainer from './searchContainer';
 import '../Styling/App.css';
 
@@ -11,7 +11,7 @@ class App extends Component {
                 <div className="row">
                     <div className="col-sm-10 offset-sm-1 text-center">
                         <SearchContainer/>
-                        <ChartContainer/>
+                        <ResultContainer/>
                     </div>
                 </div>
             </div>
