@@ -42,7 +42,7 @@ class ChartContainer extends Component {
                         data={this.props.chartData}
                         options={this.state.options}
                         graph_id="BarChart"
-                        width="800px"
+                        width="90%"
                         height="600px"
                     />
                 </div>

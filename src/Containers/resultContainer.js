@@ -6,9 +6,14 @@ import ResultFilter from './resultFilter';
 class ResultContainer extends Component {
 
     render() {
-        if (!this.props.chart.data) {
+
+        if (this.props.isLoading) {
             return (
-                <div></div>
+                <div>
+                    <img className=""
+                         src="https://www.usana.com/images/loading-spinner-black.gif"
+                         height="32" width="32"/>
+                </div>
             );
         }
 
@@ -22,8 +27,8 @@ class ResultContainer extends Component {
     }
 }
 
-function mapStateToProps({chart}) {
-    return {chart};
+function mapStateToProps({chart, isLoading}) {
+    return {chart, isLoading};
 }
 
 export default connect(mapStateToProps)(ResultContainer);

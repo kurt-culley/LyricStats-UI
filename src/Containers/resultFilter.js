@@ -99,7 +99,7 @@ class ResultFilter extends Component {
     render() {
         if (!this.props.chartData) {
             return (
-                <div>Loading...</div>
+                <div></div>
             );
         }
 
